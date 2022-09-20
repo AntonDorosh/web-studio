@@ -115,7 +115,6 @@ body {
 
 .contact-icon:hover path,
 .contact-icon:focus path {
-  fill: var(--accent-color);
   outline: none;
 }
 
@@ -126,3 +125,9 @@ body {
   align-items: center;
 }
 
+
+.contact-link:hover .contact-icon path,
+.contact-link:focus .contact-icon path {
+  color: var(--accent-color);
+  fill: var(--accent-color)
+}
