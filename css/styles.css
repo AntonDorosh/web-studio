@@ -32,9 +32,30 @@ body {
   background-color: var(--background-color);
 }
 
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+}
+
+
+
+
+/* Header */
+
+
 .header {
   height: 80px;
   width: 1600px;
+  border-bottom: 1px solid #ECECEC;
 }
 
 
@@ -128,6 +149,105 @@ body {
 
 .contact-link:hover .contact-icon path,
 .contact-link:focus .contact-icon path {
-  color: var(--accent-color);
   fill: var(--accent-color)
+}
+
+
+/* Main content */
+/* Hero */
+
+.hero {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  background-image: url("../img/hero.jpg");
+}
+
+.hero-container {
+  height: 600px;
+  width: var(--content-width);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  width: 696px;
+  color: var(--background-color);
+}
+
+.hero-button {
+  font-family: inherit;
+  width: 216px;
+  height: 50px;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--background-color);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  outline: none;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* Features */
+
+.features {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.features-container {
+  width: var(--content-width);
+}
+.features-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.features-item {
+}
+
+
+.features-item-box {
+  width: 270px;
+  height: 120px;
+  background: var(--section-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.features-subtitle {
+  font-weight: 700;
+  font-size: var(--accent-font-size);
+  line-height: 1.14;
+  letter-spacing: var(--accent-letter-spacing);
+  text-transform: uppercase;
+  color: var(--text-color);
+  margin-top: 30px;
+}
+.features-text {
+  font-size: var(--accent-font-size);
+  letter-spacing: var(--accent-letter-spacing);
+  color: var(--main-text-color);
+  line-height: 1.71;
 }
