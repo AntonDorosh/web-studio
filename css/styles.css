@@ -350,3 +350,39 @@ body {
 .team__media-icon {
   fill: #AFB1B8;
 }
+
+.team__media-icon:hover {
+  fill: var(--accent-color);
+}
+
+
+/* Customers */
+
+.customers {
+  display: flex;
+  justify-content: center;
+  height: 350px;
+
+}
+.customers-container {
+  margin: 0 auto;
+  margin-bottom: 94px;
+}
+.customers-title {
+  margin-bottom: 50px;
+}
+
+.customers-list {
+  display: flex;
+  gap: 30px;
+
+}
+.customers-item {
+}
+.customers-link {
+}
+.customers-icon {
+
+}
+
+
